@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:crypto_list/crypto_list_widget.dart';
 
 
 void main() async {
@@ -10,9 +11,7 @@ void main() async {
   runApp(
     new MaterialApp(
       title: 'Crypto Diary',
-      home: new Center(
-        child: new Text('Hello World!')
-      )
+      home: new CryptoListWidget(currencies)
     )
   );
 }
